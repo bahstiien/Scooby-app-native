@@ -7,6 +7,7 @@ import ProjectsScreen from './Screens/ProjectsScreen';
 import TicketsScreen from './Screens/TicketsScreen';
 import DashboardScreen from './Screens/Dashboard';
 import NewProject from './Screens/NewProject';
+import Login from './Screens/LoginScreen';
 
 const Tab = createBottomTabNavigator();
 
@@ -36,6 +37,7 @@ export default function App() {
           tabBarInactiveTintColor: 'gray',
         })}
       >
+        <Tab.Screen name="screen" component={Login} />
         <Tab.Screen name="Dashboard" component={DashboardScreen} />
         <Tab.Screen name="Tickets" component={TicketsScreen} />
         <Tab.Screen name="Projects" component={ProjectsScreen} />
